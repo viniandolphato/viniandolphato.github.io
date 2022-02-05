@@ -56,7 +56,7 @@ body {
     height: 70px;
     width: 250px;
 
-    background-color: rgb(111, 99, 95);
+    background-color: rgb(129, 114, 109);
     border-radius: 15px;
 }
 
@@ -121,7 +121,7 @@ body {
     border: none;
     color: black;
 
-    background-color: rgb(111, 99, 95);
+    background-color: rgb(129, 114, 109);
     border-radius: 5px;
     cursor: pointer;
 }
