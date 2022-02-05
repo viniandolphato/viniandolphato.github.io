@@ -1,0 +1,130 @@
+body {
+    background-color: rgb(136, 100, 83);
+    font-family: monospace;
+}
+
+.topo, 
+.links {
+    color: black;
+    background-color: rgba(128, 128, 128, 0.4);
+    border-radius: 15px;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.links {
+    width: 320px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.topo h1 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.topo h3 {
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 15px;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-github,
+.social-email,
+.social-instagram {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+
+    height: 70px;
+    width: 230px;
+
+    background-color: rgb(111, 99, 95);
+    border-radius: 15px;
+}
+
+.social-instagram {
+    margin-bottom: 20px;
+}
+
+.social img {
+    height: 20px;
+    width: 20px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.social h2 {
+    text-decoration: none;
+    margin-top: 1px;
+    height: 8px;
+    font-size: 16px;
+}
+
+.social a {
+    text-decoration: none;
+    height: 18px;
+    font-size: 12px;
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.texto-central {
+    margin-top: 50px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 9px;
+}
+
+.links {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.links a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    
+    display: flex;
+    flex-direction: column;
+
+    height: 35px;
+    width: 290px;
+    margin-bottom: 10px;
+
+    padding-top: 13px;
+
+    background: none;
+    border: none;
+    color: black;
+
+    background-color: rgb(111, 99, 95);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rock-paper-scissors {
+    margin-top: 10px;
+}
