@@ -26,12 +26,12 @@ body {
     text-align: center;
 }
 
-.topo h1 {
+.cabecalho h1 {
     font-size: 30px;
     font-weight: bolder;
 }
 
-.topo h3 {
+.cabecalho h2 {
     margin-bottom: 20px;
     margin-left: 50px;
     margin-right: 50px;
@@ -45,23 +45,17 @@ body {
     text-align: center;
 }
 
-.social-github,
-.social-email,
-.social-instagram {
+.social-block {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 0px;
     margin-bottom: 10px;
 
-    height: 70px;
+    height: 67px;
     width: 250px;
 
     background-color: rgb(129, 114, 109);
     border-radius: 15px;
-}
-
-.social-instagram {
-    margin-bottom: 20px;
 }
 
 .social img {
@@ -71,9 +65,11 @@ body {
     margin-bottom: 0px;
 }
 
-.social h2 {
+.social p {
     text-decoration: none;
-    margin-top: 1px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 12px;
     height: 8px;
     font-size: 16px;
 }
