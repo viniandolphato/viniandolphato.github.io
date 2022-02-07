@@ -14,13 +14,23 @@ header {
 .cabecalho {
     margin: auto;
     color: rgb(225, 225, 225);
+    vertical-align: middle;
+}
+
+.cabecalho img {
+    height: 35px;
+    width: 35px;
+    padding-right: 25px;
+    padding-bottom: 8px;
+    vertical-align: middle;
 }
 
 .cabecalho h1 {
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
     margin-top: 10px;
     margin-bottom: 0px;
+    vertical-align: middle;
 }
 
 .cabecalho p {
@@ -92,8 +102,13 @@ header {
 
 .menu {
     margin-left: 70px;
-    margin-right: 100px;
+    margin-right: 70px;
     margin-top: 30px;
+    width: 260px;
+}
+
+.menu a {
+    display: block;
 }
 
 li {
@@ -117,7 +132,13 @@ li {
 .l2 {
     background-color: rgba(0, 0, 0, 0.08);
     font-size: 16px;
+    margin-left: 40px;
+}
 
+.link-menu {
+    text-decoration: none;
+    color: black;
+    display: block;
 }
 
 ul {
@@ -135,8 +156,8 @@ ul {
 .conteudo {
     margin-left: auto;
     margin-right: 60px;
+    margin-bottom: 30px;
     text-align: justify;
-    margin-top: 30px;
 }
 
 .titulo,
@@ -145,18 +166,17 @@ ul {
 }
 
 .titulo {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .texto {
-    font-size: 18px;
-    min-height: 38vh;
-    margin-bottom: 45px;
+    font-size: 16px;
+    margin-bottom: 15px;
 }
 
 .cont {
     border-left: solid 1px gray;
-    padding-top: 10px;
+    min-height: 60vh;
 }
 
 .rodape {
@@ -180,7 +200,26 @@ ul {
     margin: 0px;
 }
 
-.link-menu {
+.li-insert {
+    list-style: disc;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    white-space: normal;
+    text-align: justify;
+}
+
+.link-insert {
     text-decoration: none;
     color: black;
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+.social-insert {
+    margin-top: 60px;
+    margin-left: 60px;
+    background-color: transparent;
 }

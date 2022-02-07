@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Vini's Homepage</title>
+    <link rel="shortcut icon" href="assets/logo-p.png""/>
 
     <link rel="stylesheet" href="styleHome.css" />
 </head>
@@ -12,7 +14,7 @@
     
     <header>
         <section class="cabecalho">
-            <h1>Vinicius Andolphato</h1>
+            <h1><img src="assets/logo-b.png">Vinicius Andolphato</h1>
             <p>Musician, Chemical Engineer, Chef and Developer - not necessarily in this order</p>
         </section>
 
@@ -54,13 +56,13 @@
     <div class="pagina">
         <nav class="menu">
             <ul class="ul1">
-                <li class="l1"><a href wm-nav="indexContent.html" class="link-menu">Home</a></li>
-                <li class="l1"><a href wm-nav="aboutMe.html" class="link-menu">About me</a></li>
-                <li class="l1"><a href wm-nav="projects.html" class="link-menu">Projects</a></li>
+                <a href wm-nav="home.html" class="link-menu"><li class="l1">Home</li></a>
+                <a href wm-nav="aboutMe.html" class="link-menu"><li class="l1">About me</li></a>
+                <a href wm-nav="projects.html" class="link-menu"><li class="l1 folder">Projects</li></a>
                 <ul class="ul2">
-                    <li class="l2"><a href wm-nav="rockPaperScissors.html" class="link-menu">Rock, Paper and Scissors</a></li>
+                    <a href wm-nav="rockPaperScissors.html" class="link-menu"><li class="l2 oculto">Rock, Paper and Scissors</li></a>
                 </ul>
-                <li class="l1"><a href wm-nav="contactMe.html" class="link-menu">Contact me</a></li>
+                <a href wm-nav="contactMe.html" class="link-menu"><li class="l1">Contact me</li></a>
             </ul>
         </nav>
     
@@ -68,18 +70,27 @@
             <section class="cont">
                 <h2 class="titulo">Home</h2>
                 <p class="texto">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,    
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Welcome to my homepage!
+                </p>
+                
+                <p class="texto">
+                    I made this website as my very first project
+                    of web developing. I used some basic concepts
+                    of HTML, CSS and Javascript and constructed
+                    it from zero, without using templates or
+                    ready-made items (I know, it could be easier
+                    and prettier, but it would be less important
+                    to my learning process).
+                </p>
+                
+                <p class="texto">
+                    Here you will find some information about me,
+                    the projects I've been developing and how
+                    to contact me. Enjoy!
                 </p>
             </section>
         </section>
     </div>
-
-    <section id="contenido"></section>
 
     <footer class="rodape">
         <p>Very simple homepage developed to use some basic contents of HTML, CSS and Javascript.</p>

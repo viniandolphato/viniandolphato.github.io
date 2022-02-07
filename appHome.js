@@ -8,3 +8,13 @@ document.querySelectorAll('.link-menu').forEach(link => {
             .then(html => cont.innerHTML = html)
     }
 })
+
+
+
+// document.querySelectorAll('.folder').forEach(folder => {
+//     folder.onclick = function() {
+//         const ul = folder.nextElementSibling
+//         const d = ul.style.display
+//         ul.style.display = d === 'none' ? 'block' : 'none'
+//     }
+// })
