@@ -156,6 +156,8 @@ header {
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    white-space: normal;
+    word-break: normal; 
     background-color: rgb(235, 232, 210);
     min-height: 58vh;
     width: calc(100vw - scrollbarWidth);
@@ -172,7 +174,7 @@ header {
     display: block;
 }
 
-li {
+.menu li {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 15px;
@@ -185,7 +187,7 @@ li {
 }
 
 @media (min-width: 880px) {
-    li {
+    .menu li {
         white-space: nowrap;
     }
 }
@@ -281,7 +283,7 @@ ul {
 
 @media (min-width: 880px) {
     .li-insert {
-        margin-left: 10vw;
+        margin-left: 5vw;
         margin-top: 10px;
         margin-bottom: 10px;
         padding-left: 5px;
@@ -297,8 +299,8 @@ ul {
     color: black;
     font-weight: bold;
     margin-left: 3px;
-    max-width: 50px;
-    word-break: break-all;
+    max-width: fit-content;
+    word-break: normal;
 }
 
 @media (max-width: 880px) {
@@ -337,7 +339,6 @@ ul {
         display: flex;
         align-items: left;
         margin-left: 10vw;
-        margin-right: 100px;
         background-color: transparent;
         margin-top: 30px;
         padding-left: 10px;
