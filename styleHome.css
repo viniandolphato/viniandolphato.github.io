@@ -82,7 +82,7 @@ header {
     }
 
     .cabecalho h1 {
-        font-size: 23px;
+        font-size: 28px;
     }
 
     .cabecalho p {
@@ -357,7 +357,7 @@ ul {
         display: flex;
         flex-direction: column;
         align-items: left;
-        margin-left: 12vw;
+        margin-left: 5vw;
         width: fit-content;
     }
 }
