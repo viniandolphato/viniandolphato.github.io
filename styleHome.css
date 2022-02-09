@@ -27,7 +27,6 @@ header {
 
 .cabecalho h1 {
     text-align: center;
-    font-size: 35px;
     margin-top: 10px;
     margin-bottom: 0px;
     margin-left: 8px;
@@ -37,7 +36,6 @@ header {
 
 .cabecalho p {
     text-align: center;
-    font-size: 15px;
     margin-top: 20px;
     margin-left: 8px;
     margin-right: 8px;
@@ -47,6 +45,14 @@ header {
     .social {
         margin-left: auto;
         margin-right: 30px;
+    }
+
+    .cabecalho h1 {
+        font-size: 35px;
+    }
+
+    .cabecalho p {
+        font-size: 15px;
     }
     
     .meio {
@@ -59,10 +65,28 @@ header {
     }
 }
 
+@media (min-width: 880px) and (max-width: 1320px) {
+    .cabecalho h1 {
+        font-size: 35px;
+    }
+
+    .cabecalho p {
+        font-size: 13px;
+    }
+}
+
 @media (max-width: 880px) {
     .cabecalho {
         display: flex;
         flex-direction: column;
+    }
+
+    .cabecalho h1 {
+        font-size: 23px;
+    }
+
+    .cabecalho p {
+        font-size: 13px;
     }
 
     .meio {
@@ -75,7 +99,7 @@ header {
         display: flex;
         flex-direction: column;
         align-items: left;
-        margin-left: 10px;
+        margin-left: 5px;
         margin-right: 15px;
     }
 
@@ -98,7 +122,7 @@ header {
 .social {
     display: flex;
     align-items: left;
-    margin-left: 10px;
+    margin-left: 5px;
     margin-right: 15px;
     background-color: rgb(194, 194, 194);
     border-radius: 10px;
@@ -106,7 +130,7 @@ header {
     margin-top: 20px;
     width: fit-content;
     max-width: 55vw;
-    padding-left: 10px;
+    padding-left: 8px;
 }
 
 .social-div {
@@ -126,7 +150,7 @@ header {
 }
 
 .logo img {
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .logo p {
@@ -139,10 +163,10 @@ header {
 .social a {
     text-decoration: none;
     color: black;
-    font-size: 12px;
+    font-size: 11px;
     align-items: left;
-    margin-left: 10px;
-    margin-right: 5px;
+    margin-left: 4px;
+    margin-right: 2px;
     padding: 2px;
 }
 
@@ -269,8 +293,8 @@ ul {
     text-align: center;
     font-size: 10px;
     color: rgb(225, 225, 225);
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-top: 0px;
     padding-bottom: 0px;
     margin: 0px;
