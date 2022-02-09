@@ -2,12 +2,12 @@ body {
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     background-color: rgb(45, 45, 45);
+    align-items: center;
 }
 
 header {
     display: flex;
     border-bottom: solid 1px gray;
-
     background-color: rgb(45, 45, 45);
 }
 
@@ -17,7 +17,7 @@ header {
     vertical-align: middle;
 }
 
-.cabecalho img {
+.logoVini {
     height: 35px;
     width: 35px;
     padding-right: 25px;
@@ -59,7 +59,12 @@ header {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 880px) {
+    .cabecalho {
+        display: flex;
+        flex-direction: column;
+    }
+
     .meio {
         display: flex;
         flex-direction: column;
@@ -71,8 +76,22 @@ header {
         flex-direction: column;
         align-items: left;
         margin-left: 10px;
-        margin-right: 10px;
-        
+        margin-right: 15px;
+    }
+
+    .logoVini{
+        margin: 0px;
+        height: 60px;
+        width: 60px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 20px;
+        vertical-align: middle;
+    }
+
+    .cabecalho span::before{
+        content: "\a";
+        white-space: pre;
     }
 }
   
@@ -80,13 +99,13 @@ header {
     display: flex;
     align-items: left;
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 15px;
     background-color: rgb(194, 194, 194);
     border-radius: 10px;
     margin-bottom: 20px;
     margin-top: 20px;
+    width: fit-content;
     max-width: 55vw;
-    max-height: 500px;
     padding-left: 10px;
 }
 
@@ -123,7 +142,7 @@ header {
     font-size: 12px;
     align-items: left;
     margin-left: 10px;
-    margin-right: 15px;
+    margin-right: 5px;
     padding: 2px;
 }
 
@@ -133,8 +152,11 @@ header {
 }
 
 .pagina {
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
-    background-color: rgb(214, 210, 182);
+    background-color: rgb(235, 232, 210);
     min-height: 58vh;
     width: calc(100vw - scrollbarWidth);
 }
@@ -162,7 +184,7 @@ li {
 
 }
 
-@media (min-width: 800px) {
+@media (min-width: 880px) {
     li {
         white-space: nowrap;
     }
@@ -200,9 +222,17 @@ ul {
 
 .conteudo {
     margin-left: auto;
-    margin-right: 5vw;
+    margin-right: auto;
     margin-bottom: 30px;
 }
+
+.cont {
+    border-left: solid 1px gray;
+    min-height: 60vh;
+    max-width: calc(100% - scrollbarWidth);
+    margin-right: 5vw;
+}
+
 
 .titulo,
 .texto {
@@ -219,22 +249,13 @@ ul {
     text-align: justify;
 }
 
-.cont {
-    border-left: solid 1px gray;
-    min-height: 60vh;
-}
-
 .rodape {
     padding-top: 10px;
     padding-bottom: 20px;
-
     border-top: solid 1px gray;
     margin-top: auto;
-
     background-color: rgb(45, 45, 45);
-
     height: auto;
-
 }
 
 .rodape p{
@@ -245,15 +266,30 @@ ul {
     margin: 0px;
 }
 
-.li-insert {
-    list-style: disc;
-    text-align: left;
-    margin-left: 100px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 5px;
-    white-space: normal;
-    text-align: justify;
+@media (max-width: 880px) {
+    .li-insert {
+        margin-left: 40px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-left: 0px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        list-style: disc;
+        text-align: justify;
+    }
+}
+
+@media (min-width: 880px) {
+    .li-insert {
+        margin-left: 10vw;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        list-style: disc;
+        text-align: justify;
+    }
 }
 
 .link-insert {
@@ -261,10 +297,68 @@ ul {
     color: black;
     font-weight: bold;
     margin-left: 3px;
+    max-width: 50px;
+    word-break: break-all;
 }
 
-.social-insert {
-    margin-top: 60px;
-    margin-left: 60px;
-    background-color: transparent;
+@media (max-width: 880px) {
+    .social-insert {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin-top: 30px;
+        width: fit-content;
+    }
+
+    .meio-insert {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin-left: 12vw;
+        width: fit-content;
+    }
+}
+
+@media (min-width: 1320px) {
+    .social-insert {
+        display: flex;
+        align-items: left;
+        margin-left: 8vw;
+        margin-top: 60px;
+    }
+    .meio-insert {
+        display: flex;
+        align-items: left;
+    }
+}
+
+@media (min-width: 880px) and (max-width: 1320px){
+    .social-insert {
+        display: flex;
+        align-items: left;
+        margin-left: 10vw;
+        margin-right: 100px;
+        background-color: transparent;
+        margin-top: 30px;
+        padding-left: 10px;
+    }
+
+    .espaco-social {
+        margin-bottom: 40px;
+    }
+}
+
+.social-insert a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    align-items: left;
+    margin-left: 10px;
+    margin-right: 20px;
+    padding: 2px;
+}
+
+.social-insert a:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
 }
